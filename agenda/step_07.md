@@ -3,11 +3,13 @@
 `git checkout step_07`
 
 ## Learn
-- TBD
+- GraphQL Resolver info
+- GraphQL Query complexity
 
 ## Packages
 
-- TBD
+- [graphql-fields](https://www.npmjs.com/package/graphql-fields)
 
 ## Tasks
-- [ ] TBD
+- [ ] Add dynamic select based on `graphql-fields` package
+- [ ] Add complexity check
