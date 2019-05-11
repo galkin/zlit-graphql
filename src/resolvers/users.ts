@@ -1,7 +1,12 @@
-import { Arg, FieldResolver, Query, Resolver, Root } from 'type-graphql';
+import { Arg, FieldResolver, Query, Resolver, Root, InputType, Field } from 'type-graphql';
 import { getRepository, Repository } from 'typeorm';
 
 import { User } from '~/entities/user';
+
+@InputType()
+export class UserFilter implements Partial<User> {
+  @Field({ nullable: true }) lastName?: string;
+}
 
 @Resolver(() => User)
 export class UsersResolver {
@@ -11,8 +16,12 @@ export class UsersResolver {
   }
 
   @Query(() => [User])
-  async users(): Promise<User[]> {
-    return this.repository.find({});
+  async users(
+    @Arg('filter', { nullable: true }) userFilter: UserFilter
+  ): Promise<User[]> {
+    return this.repository.find({
+      where: userFilter
+    });
   }
 
   @Query(() => User, { nullable: true })

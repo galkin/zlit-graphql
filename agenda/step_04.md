@@ -1,13 +1,17 @@
 # Arguments: pagination and filtering
 
-`git checkout step_02`
+`git checkout step_04`
 
 ## Learn
-- TBD
+- GraphQL Input Type
+- Feature implementation: GraphQL Resolver VS DataLayer 
+- TypeORM repository features
 
 ## Packages
 
-- TBD
+- N/a
 
 ## Tasks
-- [ ] TBD
+- [ ] Add additional filter fields
+- [ ] Add `take` and `skip` arguments to `users` resolver
+- [ ] Add order to `users` resolver
