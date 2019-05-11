@@ -3,11 +3,15 @@
 `git checkout step_06`
 
 ## Learn
-- TBD
+- GraphQL resolver context
+- Authenticated GraphQL VS Unauthenticated REST 
+- How add ACL to GraphQL schema
 
 ## Packages
 
-- TBD
+- N/A
 
 ## Tasks
-- [ ] TBD
+- [ ] Add REST /login endpoint with JWT
+- [ ] Create GraphQL context builder
+- [ ] Create AuthChecker
