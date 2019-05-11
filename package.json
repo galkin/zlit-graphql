@@ -16,18 +16,22 @@
     "watch": "nodemon -e ts -w ./src -x ts-node -r tsconfig-paths/register src/index.ts --inspect | pino-pretty -l -t 'SYS:HH:MM:ss.l'"
   },
   "dependencies": {
+    "apollo-server-koa": "^2.5.0",
     "dotenv-safe": "^6.1.0",
+    "graphql": "^14.3.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "pg": "^7.9.0",
     "pino": "^5.11.3",
     "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.3",
     "typeorm": "^0.2.15"
   },
   "devDependencies": {
     "@ef-carbon/tspm": "^2.2.5",
     "@types/dotenv-safe": "^5.0.3",
+    "@types/graphql": "^14.2.0",
     "@types/koa": "^2.0.48",
     "@types/koa-bodyparser": "^4.2.2",
     "@types/koa-router": "^7.0.40",

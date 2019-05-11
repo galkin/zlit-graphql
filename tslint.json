@@ -6,16 +6,17 @@
     "tslint-config-prettier"
   ],
   "rules": {
+    "max-classes-per-file": false,
     "no-duplicate-string": false,
     "indent": [true, "spaces", 2],
     "max-line-length": [true, {"limit": 120, "ignore-pattern": "^import |^export {(.*?)}"}],
     "member-access": false,
     "no-boolean-literal-compare": true,
     "no-console": false,
-    "no-implicit-dependencies": [true, ["~", "supertest"]],
+    "no-implicit-dependencies": [true, ["~"]],
     "object-literal-sort-keys": false,
     "ordered-imports": true,
     "semicolon": [true, "always"],
-    "variable-name": [true, "ban-keywords", "check-format", "allow-snake-case"]
+    "variable-name": [true, "ban-keywords", "check-format"]
   }
 }
