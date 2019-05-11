@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-sonarts",
+    "tslint-config-standard",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-duplicate-string": false,
+    "indent": [true, "spaces", 2],
+    "max-line-length": [true, {"limit": 120, "ignore-pattern": "^import |^export {(.*?)}"}],
+    "member-access": false,
+    "no-boolean-literal-compare": true,
+    "no-console": false,
+    "no-implicit-dependencies": [true, ["~", "supertest"]],
+    "object-literal-sort-keys": false,
+    "ordered-imports": true,
+    "semicolon": [true, "always"],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-snake-case"]
+  }
+}

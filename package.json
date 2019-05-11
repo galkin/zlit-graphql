@@ -1,0 +1,47 @@
+{
+  "name": "@galkin/zlit-graphql-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypeGraphQL sandbox example",
+  "license": "UNLICENSED",
+  "author": "Nikita Galkin",
+  "scripts": {
+    "build": "rm -rf build && tsc -p tsconfig-app.json && ef-tspm -c tsconfig-app.json",
+    "lint": "tslint -p tsconfig.json",
+    "lint-fix": "prettier --write 'src/**/*.ts' 'tests/**/*.ts' && tslint -p tsconfig.json --fix",
+    "prestart": "npm run build",
+    "start": "node build/index.js",
+    "test": "npm run lint && npm run typing",
+    "typing": "tsc -p tsconfig.json",
+    "watch": "nodemon -e ts -w ./src -x ts-node -r tsconfig-paths/register src/index.ts --inspect | pino-pretty -l -t 'SYS:HH:MM:ss.l'"
+  },
+  "dependencies": {
+    "dotenv-safe": "^6.1.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "pg": "^7.9.0",
+    "pino": "^5.11.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.15"
+  },
+  "devDependencies": {
+    "@ef-carbon/tspm": "^2.2.5",
+    "@types/dotenv-safe": "^5.0.3",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.2",
+    "@types/koa-router": "^7.0.40",
+    "@types/node": "^10.14.6",
+    "@types/pino": "^5.8.6",
+    "nodemon": "^1.18.10",
+    "pino-pretty": "^3.0.0",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.3",
+    "tsconfig-paths": "^3.8.0",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-sonarts": "^1.9.0",
+    "typescript": "^3.4.5"
+  }
+}
