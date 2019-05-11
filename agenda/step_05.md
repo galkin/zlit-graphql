@@ -3,11 +3,14 @@
 `git checkout step_05`
 
 ## Learn
-- TBD
+- Mutation
 
 ## Packages
 
-- TBD
+- N/A
 
 ## Tasks
-- [ ] TBD
+- [ ] Add default value to NewUser.role
+- [ ] Add `setUserMail(mail: String)` mutation
+- [ ] Add `setUserFields(fields: $userFields)` mutation
+- [ ] Add `deleteUser(id: $userId)` mutation
