@@ -4,7 +4,7 @@ import config from '~/config';
 import logger from '~/logger';
 
 process.on('unhandledRejection', reason => {
-  logger.fatal({ error: reason }, 'Unhandled Rejection');
+  logger.fatal(reason, 'Unhandled Rejection');
   process.exit(1);
 });
 
