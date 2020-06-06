@@ -16,7 +16,7 @@
     "watch": "nodemon -e ts -w ./src -x ts-node -r tsconfig-paths/register src/index.ts --inspect | pino-pretty -l -t 'SYS:HH:MM:ss.l'"
   },
   "dependencies": {
-    "apollo-server-koa": "^2.5.0",
+    "apollo-server-koa": "^2.14.2",
     "dotenv-safe": "^6.1.0",
     "graphql": "^14.3.0",
     "koa": "^2.7.0",
