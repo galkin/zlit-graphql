@@ -25,7 +25,7 @@
     "pg": "^7.9.0",
     "pino": "^5.11.3",
     "reflect-metadata": "^0.1.13",
-    "type-graphql": "^0.17.3",
+    "type-graphql": "^0.17.6",
     "typeorm": "^0.2.15"
   },
   "devDependencies": {
